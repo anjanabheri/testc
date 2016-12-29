@@ -1,0 +1,158 @@
+
+#include "../include.h"
+
+typedef struct _node
+{
+    struct _node* next;
+    int           data;
+} node;
+
+node* createNode(int data);
+void insert(node** head, int data);
+void sortInsert(node** head, int data);
+void display(node* head);
+
+int main()
+{
+    node* list1 = NULL;
+    node* list2 = NULL;
+
+    insert(&list1, 10);
+    insert(&list1, 12);
+    insert(&list1, 11);
+    insert(&list1, 18);
+    insert(&list1, 19);
+    insert(&list1, 20);
+    insert(&list1, 30);
+    insert(&list1, 25);
+
+    cout << "list 1" << endl;
+    display(list1);
+
+    sortInsert(&list2, 5);
+    display(list2);
+    sortInsert(&list2, 12);
+    display(list2);
+    sortInsert(&list2, 21);
+    display(list2);
+    sortInsert(&list2, 33);
+    display(list2);
+    sortInsert(&list2, 7);
+    display(list2);
+    sortInsert(&list2, 10);
+    display(list2);
+    sortInsert(&list2, 3);
+    display(list2);
+    sortInsert(&list2, 8);
+    display(list2);
+
+    cout << "list 2" << endl;
+    display(list2);
+
+    return 0;
+}
+
+node* createNode(int data)
+{
+    node* temp = (node*)malloc(sizeof(node));
+    temp->next = NULL;
+    temp->data = data;
+    return temp;
+}
+
+void insert(node** head, int data)
+{
+    node* newNode = NULL;
+    node* temp = NULL;
+
+    newNode = createNode(data);
+
+    if (*head == NULL)
+    {
+        //first node
+        *head = newNode;
+        return;
+    }
+    temp = *head;
+
+    while (temp->next != NULL)
+    {
+        temp = temp->next;
+    }
+
+    temp->next = newNode;
+
+    return;
+}
+
+void sortInsert(node** head, int data)
+{
+    node* newNode = NULL;
+    node* temp = NULL;
+
+    newNode = createNode(data);
+
+    if (*head == NULL)
+    {
+        //first node
+        *head = newNode;
+        return;
+    }
+    temp = *head;
+
+    if (temp->next == NULL)
+    {
+        if (temp->data < data)
+        {
+            temp->next = newNode;
+        }
+        else
+        {
+            *head = newNode;
+            newNode->next = temp;
+        }
+        return;
+    }
+    node* prev = NULL;
+
+    prev = *head;
+    temp = *head;
+
+    while (temp->next != NULL)
+    {
+        if (temp->data > data)
+        {
+            newNode->next = temp;
+            if (prev != temp)
+                prev->next = newNode;
+            if (temp == *head)
+            {
+                *head = newNode;
+            }
+
+            return;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+
+    temp->next = newNode;
+
+    return;
+}
+
+void display(node* head)
+{
+    node* temp = head;
+
+    cout << endl;
+
+    while (temp != NULL)
+    {
+        cout << " " << temp->data << " --> ";
+        temp = temp->next;
+    }
+    cout << " NULL" << endl << endl;
+
+    return;
+}
