@@ -1,0 +1,390 @@
+{
+    "interfaces": [{
+            "name": "dp0s3",
+            "port": 0,
+            "ifindex": 8,
+            "mtu": 1500,
+            "flags": 69699,
+            "ip_forwarding": 1,
+            "ip_proxy_arp": 0,
+            "ip_mc_forwarding": 0,
+            "ip_rp_filter": 0,
+            "ip6_forwarding": 1,
+            "ip6_mc_forwarding": 0,
+            "ether": "52:54:0:e3:db:ae",
+            "type": "ether",
+            "link": {
+                "up": true,
+                "duplex": "full",
+                "speed": 10000
+            },
+            "dev": {
+                "driver": "rte_virtio_pmd",
+                "pci": {
+                    "node": 18446744073709551615,
+                    "address": {
+                        "domain": 0,
+                        "bus": 0,
+                        "devid": 3,
+                        "function": 0
+                    },
+                    "id": {
+                        "vendor": 6900,
+                        "device": 4096,
+                        "subsystem_vendor": 6900,
+                        "subsystem_device": 1
+                    }
+                },
+                "min_rx_bufsize": 64,
+                "max_rx_pktlen": 64,
+                "max_rx_queues": 1,
+                "max_tx_queues": 1,
+                "max_mac_addrs": 64
+            },
+            "addresses": [{
+                    "inet": "192.168.122.151/24",
+                    "broadcast": "192.168.122.255"
+                },{
+                    "inet6": "fe80::5054:ff:fee3:dbae/64",
+                    "scope": "Link"
+                }
+            ],
+            "statistics": {
+                "rx_packets": 281,
+                "tx_packets": 89,
+                "rx_bytes": 20855,
+                "tx_bytes": 25330,
+                "rx_errors": 0,
+                "tx_errors": 0,
+                "tx_multicast": 0,
+                "rx_nobuffer": 0,
+                "rx_flowmiss": 0,
+                "tx_pps": 2,
+                "tx_pps_avg": [0,0,0
+                ],
+                "tx_bps": 319,
+                "tx_bps_avg": [347,79,28
+                ],
+                "rx_pps": 6,
+                "rx_pps_avg": [1,0,0
+                ],
+                "rx_bps": 524,
+                "rx_bps_avg": [173,52,21
+                ],
+                "rx_dropped": 0,
+                "tx_dropped": 0,
+                "rx_bridge": 0,
+                "rx_multicast": 179,
+                "rx_vlan": 0,
+                "rx_bad_vid": 0,
+                "rx_bad_address": 0,
+                "rx_non_ip": 161
+            },
+            "xstatistics": {
+                "rx_packets": 281,
+                "tx_packets": 89,
+                "rx_bytes": 20855,
+                "tx_bytes": 25330,
+                "tx_errors": 0,
+                "rx_missed_errors": 0,
+                "rx_crc_errors": 0,
+                "rx_bad_length_errors": 0,
+                "rx_errors": 0,
+                "alloc_rx_buff_failed": 0,
+                "fdir_match": 0,
+                "fdir_miss": 0,
+                "tx_flow_control_xon": 0,
+                "rx_flow_control_xon": 0,
+                "tx_flow_control_xoff": 0,
+                "rx_flow_control_xoff": 0,
+                "rx_queue_0_rx_packets": 281,
+                "rx_queue_0_rx_bytes": 20855,
+                "tx_queue_0_tx_packets": 89,
+                "tx_queue_0_tx_bytes": 25330,
+                "tx_queue_0_tx_errors": 0
+            }
+        },{
+            "name": "dp0s7",
+            "port": 1,
+            "ifindex": 9,
+            "mtu": 1500,
+            "flags": 69699,
+            "ip_forwarding": 1,
+            "ip_proxy_arp": 0,
+            "ip_mc_forwarding": 0,
+            "ip_rp_filter": 0,
+            "ip6_forwarding": 1,
+            "ip6_mc_forwarding": 0,
+            "ether": "52:54:0:4:7b:cc",
+            "type": "ether",
+            "link": {
+                "up": true,
+                "duplex": "full",
+                "speed": 10000
+            },
+            "dev": {
+                "driver": "rte_virtio_pmd",
+                "pci": {
+                    "node": 18446744073709551615,
+                    "address": {
+                        "domain": 0,
+                        "bus": 0,
+                        "devid": 7,
+                        "function": 0
+                    },
+                    "id": {
+                        "vendor": 6900,
+                        "device": 4096,
+                        "subsystem_vendor": 6900,
+                        "subsystem_device": 1
+                    }
+                },
+                "min_rx_bufsize": 64,
+                "max_rx_pktlen": 64,
+                "max_rx_queues": 1,
+                "max_tx_queues": 1,
+                "max_mac_addrs": 64
+            },
+            "addresses": [{
+                    "inet": "12.12.12.1/24",
+                    "broadcast": "12.12.12.255"
+                },{
+                    "inet6": "8012::1/64",
+                    "scope": "Universe"
+                },{
+                    "inet6": "fe80::5054:ff:fe04:7bcc/64",
+                    "scope": "Link"
+                }
+            ],
+            "statistics": {
+                "rx_packets": 300,
+                "tx_packets": 81,
+                "rx_bytes": 20898,
+                "tx_bytes": 6330,
+                "rx_errors": 0,
+                "tx_errors": 0,
+                "tx_multicast": 0,
+                "rx_nobuffer": 0,
+                "rx_flowmiss": 0,
+                "tx_pps": 0,
+                "tx_pps_avg": [0,0,0
+                ],
+                "tx_bps": 15,
+                "tx_bps_avg": [11,10,5
+                ],
+                "rx_pps": 0,
+                "rx_pps_avg": [0,0,0
+                ],
+                "rx_bps": 20,
+                "rx_bps_avg": [39,36,19
+                ],
+                "rx_dropped": 0,
+                "tx_dropped": 0,
+                "rx_bridge": 0,
+                "rx_multicast": 300,
+                "rx_vlan": 9,
+                "rx_bad_vid": 0,
+                "rx_bad_address": 0,
+                "rx_non_ip": 161
+            },
+            "xstatistics": {
+                "rx_packets": 300,
+                "tx_packets": 81,
+                "rx_bytes": 20898,
+                "tx_bytes": 6330,
+                "tx_errors": 0,
+                "rx_missed_errors": 0,
+                "rx_crc_errors": 0,
+                "rx_bad_length_errors": 0,
+                "rx_errors": 0,
+                "alloc_rx_buff_failed": 0,
+                "fdir_match": 0,
+                "fdir_miss": 0,
+                "tx_flow_control_xon": 0,
+                "rx_flow_control_xon": 0,
+                "tx_flow_control_xoff": 0,
+                "rx_flow_control_xoff": 0,
+                "rx_queue_0_rx_packets": 300,
+                "rx_queue_0_rx_bytes": 20898,
+                "tx_queue_0_tx_packets": 81,
+                "tx_queue_0_tx_bytes": 6330,
+                "tx_queue_0_tx_errors": 0
+            }
+        },{
+            "name": "dp0s8",
+            "port": 2,
+            "ifindex": 10,
+            "mtu": 1500,
+            "flags": 69699,
+            "ip_forwarding": 1,
+            "ip_proxy_arp": 0,
+            "ip_mc_forwarding": 0,
+            "ip_rp_filter": 0,
+            "ip6_forwarding": 1,
+            "ip6_mc_forwarding": 0,
+            "ether": "52:54:0:52:f4:5",
+            "type": "ether",
+            "link": {
+                "up": true,
+                "duplex": "full",
+                "speed": 10000
+            },
+            "dev": {
+                "driver": "rte_virtio_pmd",
+                "pci": {
+                    "node": 18446744073709551615,
+                    "address": {
+                        "domain": 0,
+                        "bus": 0,
+                        "devid": 8,
+                        "function": 0
+                    },
+                    "id": {
+                        "vendor": 6900,
+                        "device": 4096,
+                        "subsystem_vendor": 6900,
+                        "subsystem_device": 1
+                    }
+                },
+                "min_rx_bufsize": 64,
+                "max_rx_pktlen": 64,
+                "max_rx_queues": 1,
+                "max_tx_queues": 1,
+                "max_mac_addrs": 64
+            },
+            "addresses": [{
+                    "inet": "23.23.23.1/24",
+                    "broadcast": "23.23.23.255"
+                },{
+                    "inet": "23.23.44.2/24",
+                    "broadcast": "23.23.44.255"
+                },{
+                    "inet": "23.23.23.2/24",
+                    "broadcast": "23.23.23.255"
+                },{
+                    "inet6": "fe80::5054:ff:fe52:f405/64",
+                    "scope": "Link"
+                },{
+                    "inet6": "2444::1/64",
+                    "scope": "Universe"
+                },{
+                    "inet6": "2333::2/64",
+                    "scope": "Universe"
+                },{
+                    "inet6": "2333::1/64",
+                    "scope": "Universe"
+                }
+            ],
+            "statistics": {
+                "rx_packets": 369,
+                "tx_packets": 12,
+                "rx_bytes": 26016,
+                "tx_bytes": 1168,
+                "rx_errors": 0,
+                "tx_errors": 0,
+                "tx_multicast": 0,
+                "rx_nobuffer": 0,
+                "rx_flowmiss": 0,
+                "tx_pps": 0,
+                "tx_pps_avg": [0,0,0
+                ],
+                "tx_bps": 0,
+                "tx_bps_avg": [0,1,0
+                ],
+                "rx_pps": 0,
+                "rx_pps_avg": [0,0,0
+                ],
+                "rx_bps": 36,
+                "rx_bps_avg": [50,45,24
+                ],
+                "rx_dropped": 0,
+                "tx_dropped": 0,
+                "rx_bridge": 0,
+                "rx_multicast": 369,
+                "rx_vlan": 20,
+                "rx_bad_vid": 20,
+                "rx_bad_address": 0,
+                "rx_non_ip": 153
+            },
+            "xstatistics": {
+                "rx_packets": 369,
+                "tx_packets": 12,
+                "rx_bytes": 26016,
+                "tx_bytes": 1168,
+                "tx_errors": 0,
+                "rx_missed_errors": 0,
+                "rx_crc_errors": 0,
+                "rx_bad_length_errors": 0,
+                "rx_errors": 0,
+                "alloc_rx_buff_failed": 0,
+                "fdir_match": 0,
+                "fdir_miss": 0,
+                "tx_flow_control_xon": 0,
+                "rx_flow_control_xon": 0,
+                "tx_flow_control_xoff": 0,
+                "rx_flow_control_xoff": 0,
+                "rx_queue_0_rx_packets": 369,
+                "rx_queue_0_rx_bytes": 26016,
+                "tx_queue_0_tx_packets": 12,
+                "tx_queue_0_tx_bytes": 1168,
+                "tx_queue_0_tx_errors": 0
+            }
+        },{
+            "name": "dp0s7.1",
+            "port": 1,
+            "ifindex": 16,
+            "mtu": 1500,
+            "flags": 69699,
+            "ip_forwarding": 1,
+            "ip_proxy_arp": 0,
+            "ip_mc_forwarding": 0,
+            "ip_rp_filter": 0,
+            "ip6_forwarding": 1,
+            "ip6_mc_forwarding": 0,
+            "ether": "52:54:0:4:7b:cc",
+            "type": "vlan",
+            "tag": 1,
+            "tag-proto": 33024,
+            "addresses": [{
+                    "inet": "6.6.6.6/24",
+                    "broadcast": "6.6.6.255"
+                },{
+                    "inet6": "6666::1111/120",
+                    "scope": "Universe"
+                },{
+                    "inet6": "fe80::5054:ff:fe04:7bcc/64",
+                    "scope": "Link"
+                }
+            ],
+            "statistics": {
+                "rx_packets": 9,
+                "rx_errors": 0,
+                "tx_packets": 11,
+                "tx_errors": 0,
+                "rx_bytes": 938,
+                "tx_bytes": 1174,
+                "tx_pps": 0,
+                "tx_pps_avg": [0,0,0
+                ],
+                "tx_bps": 0,
+                "tx_bps_avg": [0,1,0
+                ],
+                "rx_pps": 0,
+                "rx_pps_avg": [0,0,0
+                ],
+                "rx_bps": 0,
+                "rx_bps_avg": [0,1,0
+                ],
+                "rx_dropped": 0,
+                "tx_dropped": 0,
+                "rx_bridge": 0,
+                "rx_multicast": 9,
+                "rx_vlan": 0,
+                "rx_bad_vid": 0,
+                "rx_bad_address": 0,
+                "rx_non_ip": 0
+            }
+        }
+    ]
+    }
+

@@ -1,0 +1,7 @@
+Interface            Admin-Status          Link-Status          IP-Address           Secondary-IPs
+lo                   up                    up                   127.0.0.1/8
+dp0s3                up                    up                   192.168.122.151/24
+dp0s7                up                    up                   12.12.12.1/24
+dp0s8                up                    up                   23.23.23.1/24
+dp0s9                down                  down                 unassigned
+

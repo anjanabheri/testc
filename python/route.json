@@ -1,0 +1,198 @@
+{
+    "route_show": [
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.20"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.2"
+                }
+            ], 
+            "prefix": "0.0.0.0/0", 
+            "scope": 0
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7.1", 
+                    "state": "directly connected"
+                }
+            ], 
+            "prefix": "6.6.6.0/24", 
+            "scope": 253
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7", 
+                    "state": "directly connected"
+                }
+            ], 
+            "prefix": "12.12.12.0/24", 
+            "scope": 253
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s8", 
+                    "state": "directly connected"
+                }
+            ], 
+            "prefix": "23.23.23.0/24", 
+            "scope": 253
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s8", 
+                    "state": "directly connected"
+                }
+            ], 
+            "prefix": "23.23.44.0/24", 
+            "scope": 253
+        }, 
+        {
+            "next_hop": [
+                {
+                    "state": "non-dataplane interface"
+                }
+            ], 
+            "prefix": "88.88.88.0/24", 
+            "scope": 253
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.10"
+                }
+            ], 
+            "prefix": "100.2.2.0/24", 
+            "scope": 0
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s3", 
+                    "state": "directly connected"
+                }
+            ], 
+            "prefix": "192.168.122.0/24", 
+            "scope": 253
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.20"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.19"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.18"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.17"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.16"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.15"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.14"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.13"
+                }
+            ], 
+            "prefix": "100.1.1.1/32", 
+            "scope": 0
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.13"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.14"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.15"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.16"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.17"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.18"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.19"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.20"
+                }
+            ], 
+            "prefix": "100.4.4.4/32", 
+            "scope": 0
+        }, 
+        {
+            "next_hop": [
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.2"
+                }, 
+                {
+                    "ifname": "dp0s7", 
+                    "state": "gateway", 
+                    "via": "12.12.12.20"
+                }
+            ], 
+            "prefix": "100.5.5.5/32", 
+            "scope": 0
+        }
+    ]
+}
