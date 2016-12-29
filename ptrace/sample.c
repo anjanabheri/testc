@@ -3,5 +3,5 @@
 
 void main()
 {
-    int c = 1 + 2;
+    printf("Hello World");
 }
