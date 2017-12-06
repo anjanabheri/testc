@@ -1,6 +1,6 @@
 int get()
 {
-    static i = 1;
+    static int i = 1;
     return i++;
 }
 
