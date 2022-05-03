@@ -1,0 +1,15 @@
+
+#libs: math.a
+
+math.a: math.o
+	ar -rv $@ $^
+
+all: main.o
+	{$info hello}
+	ld -o main.exe main.o math.a
+	
+share: main.o
+	cc -o mains.exe main.o maths.so
+
+clean:
+	rm -rf $(libs) *.o *.exe *.a *.so

@@ -22,11 +22,5 @@
 #include "errno.h"
 #include <regex.h>
 
-#define UCHAR   unsigned char
-#define UINT8   unsigned char
-#define USHORT  unsigned short
-#define UINT16  unsigned short
-#define UINT32  unsigned int
-#define ULONG   unsigned long
-#define U16     unsigned short
+
 
